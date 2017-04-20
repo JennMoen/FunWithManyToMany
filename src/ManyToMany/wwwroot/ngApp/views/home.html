@@ -1,0 +1,12 @@
+<h2>Home</h2>
+<p>
+    {{controller.message}}
+</p>
+
+<div ng-repeat="movie in controller.movies" ui-sref="details({id: movie.id})">
+    <h4>{{movie.title}} by {{movie.director}}</h4>
+    <div ng-repeat="ma in movie.movieActors">
+        {{ma.actor.firstName}}
+        {{ma.actor.lastName}}
+    </div>
+</div>

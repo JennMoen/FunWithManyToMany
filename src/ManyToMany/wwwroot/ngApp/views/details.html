@@ -1,0 +1,10 @@
+﻿
+<h2>Details</h2>
+<h3>{{controller.movie.title}} directed by {{controller.movie.director}}</h3>
+
+<h2>Add a new actor to this movie:</h2>
+<form ng-submit="controller.addActor()">
+    <input ng-model="controller.actor.firstName" />
+    <input ng-model="controller.actor.lastName" />
+    <input type="submit" value="Add Actor" />
+</form>
